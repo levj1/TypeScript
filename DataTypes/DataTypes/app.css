@@ -1,0 +1,16 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+    font-style: italic;
+}
+
+.numbButton {
+    width: 30px;
+    height: 30px;  
+}
+.signButton{
+    width: 30px;
+    height: 30px; 
+}
