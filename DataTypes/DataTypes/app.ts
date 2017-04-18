@@ -1,61 +1,27 @@
-﻿class Greeter {
-    element: HTMLElement;
-    span: HTMLElement;
-    timerToken: number;
-
-    constructor(element: HTMLElement) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
-    }
-
-    start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
-    }
-
-    stop() {
-        clearTimeout(this.timerToken);
-    }
-}
-
-function AppendToTextBox(){
-    alert("test");
-}
-
-// Number type
-var days: number = 7;
-var hours: number = 24;
-
-var weeklyhours = days * hours;
-
-function getNumberHoursInWeek() {
-    return days * hours;
-}
-console.log(getNumberHoursInWeek());
-
-// String type
-var greeting: string = "Hello all!";
-console.log(greeting);
-
-// Boolean type
-var isMale: Boolean = true;
-console.log(isMale);
+﻿
 
 
-// Array
-var arrNames: string[] = [];
-arrNames.push("ken");
-arrNames.push("andy");
 
-for (var i = 0; i < arrNames.length; i++) {
-    console.log(arrNames[i]);
-}
+let familyName: string[] = ["ken", "wood", "guy", "james", "nathy", "da", "rod", "ayou", "kelly", "andy"];
 
-var arrAges: Array<number> = [39, 12];
-for (var i = 0; i < arrAges.length; i++) {
-    console.log(arrAges[i]);
-}
+// Number
+let decimal: number = 6;
+let hex: number = 0xf00d;
+
+console.log(decimal);
+console.log(hex);
+
+// Tuple
+let x: [string, number];
+x=["ken", 37];
+
+console.log(x[0]);
 
 
+enum Color { Red, Green, Blue };
+
+let c: Color = Color.Red;
+let colorName: string = Color[1];
+
+console.log(c);
+alert(colorName);
