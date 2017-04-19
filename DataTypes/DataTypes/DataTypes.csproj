@@ -30,7 +30,10 @@
   <ItemGroup>
     <TypeScriptCompile Include="calculator.ts" />
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="classes.ts" />
+    <TypeScriptCompile Include="classes.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="generics.ts" />
     <TypeScriptCompile Include="interfaces.ts" />
   </ItemGroup>
   <ItemGroup>
